@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VoJ-WO-EBZ">
+                                <rect key="frame" x="0.0" y="20" width="187.5" height="333.5"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.42217462713068182" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="图片">
+                                    <color key="titleColor" red="0.36078431372549019" green="0.16673694957386365" blue="0.42217462713068182" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.36078431372549019" green="0.32172185724431818" blue="0.42217462713068182" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="photo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="v1X-IQ-e7w"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vg6-8p-hZd">
+                                <rect key="frame" x="0.0" y="353.5" width="375" height="313.5"/>
+                                <color key="backgroundColor" red="0.36223810369318182" green="0.34705699573863635" blue="0.42217462713068182" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="图片/视频">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="photoVideo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1CJ-ch-DJ5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4g1-64-xv1">
+                                <rect key="frame" x="187.5" y="20" width="187.5" height="333.5"/>
+                                <color key="backgroundColor" red="1" green="0.34705699573863635" blue="0.42217462713068182" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="视频">
+                                    <color key="titleColor" red="0.36223810369318182" green="0.97797185724431823" blue="0.42217462713068182" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="video:" destination="BYZ-38-t0r" eventType="touchUpInside" id="leh-Ww-a8H"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="VoJ-WO-EBZ" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" id="03W-lg-NR9"/>
+                            <constraint firstItem="4g1-64-xv1" firstAttribute="width" secondItem="VoJ-WO-EBZ" secondAttribute="width" id="4ez-8e-mfk"/>
+                            <constraint firstItem="vg6-8p-hZd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="7pu-6h-ls2"/>
+                            <constraint firstItem="vg6-8p-hZd" firstAttribute="top" secondItem="VoJ-WO-EBZ" secondAttribute="bottom" id="IM9-6y-aG4"/>
+                            <constraint firstItem="4g1-64-xv1" firstAttribute="leading" secondItem="VoJ-WO-EBZ" secondAttribute="trailing" id="LmF-Lx-p40"/>
+                            <constraint firstItem="VoJ-WO-EBZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="SX4-Z4-IiA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4g1-64-xv1" secondAttribute="trailing" id="VKZ-K1-nDz"/>
+                            <constraint firstItem="4g1-64-xv1" firstAttribute="height" secondItem="VoJ-WO-EBZ" secondAttribute="height" id="q3V-qB-N5k"/>
+                            <constraint firstItem="4g1-64-xv1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="rEi-2B-UPS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vg6-8p-hZd" secondAttribute="trailing" id="s0g-ZI-GnR"/>
+                            <constraint firstItem="VoJ-WO-EBZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="vIc-iq-HGe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="vg6-8p-hZd" secondAttribute="bottom" id="zm9-90-GfM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="551" y="90"/>
+        </scene>
+    </scenes>
+</document>
